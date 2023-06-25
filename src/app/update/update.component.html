@@ -1,0 +1,87 @@
+
+<div class="box">
+   <label class="pig"> Flight number :</label>
+   <input [(ngModel)]="data.flightnumber" type="text" name="flightnumber"><br/><br>
+    <h2>get existing collection</h2>
+    <button (click)="getdata()">getdata</button>
+</div>
+<!-- <table>
+    <tr *ngFor="let dat of datas | keyvalue">
+        <td>{{dat.key}}</td>
+        <td>{{dat.value}}</td>
+    </tr>
+</table> -->
+<div *ngFor="let x of datas;let i=index" class="table-responsive">
+    <table class="table tablebordered">
+    <tr *ngFor="let dat of x | keyvalue">
+        <td>{{dat.key}}</td>
+        <td>{{dat.value}}</td>
+    </tr>
+    </table>
+    <br/>
+    <br/>
+</div>
+
+
+<div class="table-responsive">
+    <table class="table tablebordered">
+        <tr>
+            <th class="flight">Flightnumber</th>
+            <th class="flight">Depature</th>
+            <th class="flight">Arrival</th>
+        </tr>
+
+        <tr *ngFor="let dat of datas;let i=index">
+            <td>{{dat.flightnumber}}</td>
+            <td>{{dat.depaturetime}}</td>
+            <td>{{dat.arrivaltime}}</td>
+            <td><button type="button" (click)="existdata(i)" (click)="openModal(i)" >Edit</button></td>
+            <td><button type="button" (click)="remove(i)">Delete</button></td>
+        </tr>
+        
+    </table>
+</div>
+
+<div class="modal"  id="exampleModalScrollable" aria-labelledby="exampleModalScrollableTitle" tabindex="-1" role="dialog"  [ngStyle]="{'display':display}">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+                <div class="modal-header">  
+            
+                    <h1 class="h3 mb-0 text-gray-800" class="modal-title">Update Data</h1>
+                    <button type="button" class="close" aria-label="Close" (click)="onCloseHandled()"><span aria-hidden="true">&times;</span></button>
+               
+                </div>
+                    <div class="form-group" class="modal-body"> 
+                        
+                        <label for="exampleInputPassword1" >flightnumber </label>
+                        <input type="text" [(ngModel)]="test.flightnumber"  class="form-control" name="flightnumbernew">
+
+                        <label for="exampleInputPassword1" >Depature Time </label>
+                        <input type="text" [(ngModel)]="test.depaturetime" class="form-control" name="depaturetimenew">
+
+                        <label for="exampleInputPassword1" >Arrival Time</label>
+                        <input type="text" [(ngModel)]="test.arrivaltime" class="form-control" name="arrivaltimenew">
+
+                        <button type="submit" (click)="update()" (click)="onCloseHandled()"  class="btn btn-primary">Update</button>
+                       
+                    </div>
+                </div>
+<br><br><br>
+
+</div>  
+<div *ngFor="let dat of upddat | keyvalue">
+{{dat.key}}:{{dat.value}}
+</div>
+
+</div>
+
+
+                
+                 
+      
+           
+
+
+
+
+

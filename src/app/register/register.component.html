@@ -1,0 +1,44 @@
+
+<body>
+
+ 
+ <div class="row">
+    <div class="col-md-6 mx-auto">
+        <div class="card rounded-0">
+            <div class="card-header">
+                <h3 class="mb-0">Register</h3>
+            </div>
+            <div class="card-body">
+                <form class="form" >
+
+                    <div class="form-group">
+                        <label for="">Email</label>
+
+                        <input [(ngModel)]= "data.email" name="email" type="email" class="form-control rounded-0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input [(ngModel)]="data.password" name="password" type="text" class="form-control rounded-0" required>
+                    </div>
+
+                    <button (click)="reg()"type="button" class="btn btn-primary float-right">Register</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div> 
+
+
+<div class="cloud cloud1">
+    <div class="light"></div>
+  <img  src="https://images.vexels.com/media/users/3/145795/isolated/preview/05cd33059a006bf49006097af4ccba98-plane-in-flight-by-vexels.png" />
+</div>
+<br><br><br><br><br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+
+
+</body>

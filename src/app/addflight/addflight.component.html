@@ -1,0 +1,44 @@
+<body class="base">
+<br>
+<form class="add-flight-form" [formGroup]= "userForm">
+    <input type="text" placeholder="Flight Number" formControlName="flightnumber" required>
+    <input type="text" placeholder="Departure Time" formControlName="depaturetime" required>
+    <input type="text" placeholder="Arrival Time" formControlName="arrivaltime" required>
+    <!-- Other flight details inputs -->
+    <button (click)="addItem()" type="submit">Add Flight</button><br>
+    <button (click)="reset()" type="submit">Reset</button>
+</form>
+
+
+<div class="container">
+<table class="rwd-table" >
+  <tr>
+    <th>Flight number</th>
+    <th>Depature time</th>
+    <th>Arrrival time</th>
+  </tr>
+
+
+  <tbody>
+    <tr *ngFor="let item of listData">
+      <td data-th="Supplier Code"><span>{{item.flightnumber}}</span></td>
+      <td data-th="Supplier Name"><span>{{item.depaturetime}}</span></td>
+      <td data-th="Supplier Name"><span>{{item.arrivaltime}}</span></td>
+      <td data-th="Supplier Code"><button type="button" (click)="removeitem(item)">Remove</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<button (click)="grid()" type="submit">Save</button>
+
+</div>
+
+
+<div>
+  <br><br><br><br>
+</div>
+
+</body>
+    
+
+  

@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title> Flight Booking Form</title>
+  </head>
+  <body>
+    <form  class="trip-form">
+      <fieldset class="radio-group">
+       <label for="one-way" class="bold-type">
+         <input type="radio" id="one-way" name="trip-type" value="oneWay" />
+         One Way 
+      </label>
+      <label for="round-trip" class="bold-type">
+        <input type="radio" id="round-trip" name="trip-type" value="roundTrip" checked="checked" />
+        Round trip
+      </label>
+      <label for="multi-city" class="bold-type">
+        <input type="radio" id="multi-city" name="trip-type" value="multiCity" />
+        Multi City
+      </label>
+    </fieldset>
+    <fieldset>
+        <div class="group-select-field">
+            <label [(ngModel)]="data.from" for="adults" class="bold-type">From</label> 
+            <select name="adults" class="ticket-count">
+              <option value="chennai">chennai</option>
+              <option value="Coimbatore">Coimbatore</option>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Hydrabad">Hydrabad</option>
+              <option value="Mumbai">Mumbai</option>
+            </select>
+          </div>
+        <div class="group-select-field">
+          <label for="to" [(ngModel)]="data.to" class="bold-type">To </label>
+            <select name="adults" class="ticket-count">
+              <option value="mumbai">mumbai</option>
+              <option value="Hydrabad">Hydrabad</option>
+              <option value="Coimbatore">Coimbatore</option>              
+              <option value="Bangalore">Bangalore</option>
+              <option value="Chennai">Chennai</option>
+              
+            </select>
+          </div>
+                
+      </fieldset>
+     
+      <label [(ngModel)]="data.from" for="adults" class="bold-type">From</label> 
+      <input [(ngModel)]="data.from" type="text">
+      <label for="to" [(ngModel)]="data.to" class="bold-type">To </label>
+      <input [(ngModel)]="data.to" type="text"> 
+        
+        <input (click)="getflightdata()" class="search-btn" type="submit" value="Search flights"/>
+      </form>
+
+      <div class="container">
+        <table class="rwd-table">
+          <tbody>
+          <tr>
+            <th>from</th>
+          <th>to</th>
+          <th>flightname</th>
+        </tr>
+        
+        <tr *ngFor="let dat of data;let i=index">
+          <td data-th="Supplier Code">{{dat.from}}</td>
+          <td data-th="Supplier Name">{{dat.to}}</td>
+          <td data-th="Invoice Number">{{dat.flights}}</td>
+        </tr>
+        </tbody>
+        
+        </table>
+        </div>
+    </body>
+  
+  
+  
+  </html>

@@ -1,0 +1,37 @@
+<body class="base">
+
+<h2>View Bookings</h2>
+
+  <input type="text" [(ngModel)]="data.flightnumber" placeholder="Flight Number" required>
+  <button (click)="getdata()" type="submit">Search</button>
+
+
+<!--drawing num:<input [(ngModel)]="data.flightnumber" type="text" name="drawingnumber" required><br/>
+<button (click)="getdata()">get</button>-->
+
+
+<div class="container">
+<table class="rwd-table">
+  <tbody>
+  <tr>
+    <th>flightnumber</th>
+  <th>Depature</th>
+  <th>arrival</th>
+</tr>
+
+<tr *ngFor="let dat of datas;let i=index">
+  <td data-th="Supplier Code">{{dat.flightnumber}}</td>
+  <td data-th="Supplier Name">{{dat.depaturetime}}</td>
+  <td data-th="Invoice Number">{{dat.arrivaltime}}</td>
+</tr>
+</tbody>
+
+</table>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+
+
+
+

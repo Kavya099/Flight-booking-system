@@ -1,0 +1,262 @@
+<div class="box">
+<div class="row mt-5">
+    <div class= "col-md-4 mb-3">
+        <div class="card text-center">
+            <div class = "card-body">
+                <h5 class="card-title">Air India </h5>
+
+                <p class="card-text">Mumbai-Delhi</p>
+                <a routerLink="/special-events" class="btn btn-primary">Buy Tickets</a>
+            </div>
+
+            <div class="card-footer text-muted">
+               
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="row mt-5">
+  <div class= "col-md-4 mb-3">
+      <div class="card text-center">
+          <div class = "card-body">
+              <h5 class="card-title">Indigo</h5>
+              <p class="card-text">Bengaluru - Chennai</p>
+              <a routerLink="/special-events" class="btn btn-primary">Buy Tickets</a>
+          </div>
+
+          <div class="card-footer text-muted">
+             
+          </div>
+      </div>
+
+  </div>
+</div>
+<div class="row mt-5">
+  <div class= "col-md-4 mb-3">
+      <div class="card text-center">
+          <div class = "card-body">
+              <h5 class="card-title">Air Asia</h5>
+              <p class="card-text"> Langkawi - George Town</p>
+              <a routerLink="/special-events" class="btn btn-primary">Buy Tickets</a>
+          </div>
+
+          <div class="card-footer text-muted">
+             
+          </div>
+      </div>
+
+  </div>
+</div>
+<div class="row mt-5">
+  <div class= "col-md-4 mb-3">
+      <div class="card text-center">
+          <div class = "card-body">
+              <h5 class="card-title">IndiGo</h5>
+              <p class="card-text">DEL New Delhi, India - BLR Bengaluru, India</p>
+              <a routerLink="/special-events" class="btn btn-primary">Buy Tickets</a>
+          </div>
+
+          <div class="card-footer text-muted">
+             
+          </div>
+      </div>
+
+  </div>
+</div>
+<div class="row mt-5">
+    <div class= "col-md-4 mb-3">
+        <div class="card text-center">
+            <div class = "card-body">
+                <h5 class="card-title">Indigo</h5>
+                <p class="card-text">Bengaluru - Chennai</p>
+                <a routerLink="/special-events" class="btn btn-primary">Buy Tickets</a>
+            </div>
+  
+            <div class="card-footer text-muted">
+               
+            </div>
+        </div>
+  
+    </div>
+  </div>
+
+<div class="row mt-5">
+  <div class= "col-md-4 mb-3">
+      <div class="card text-center">
+          <div class = "card-body">
+              <h5 class="card-title">Emirates</h5>
+              <p class="card-text">New Delhi - London</p>
+              <a routerLink="/special-events" class="btn btn-primary">Buy Tickets</a>
+          </div>
+
+          <div class="card-footer text-muted">
+             
+          </div>
+      </div>
+
+  </div>
+</div>
+
+
+
+<div class="row mt-5">
+    <div class= "col-md-4 mb-3" *ngFor= "let event of events">
+        <div class="card text-center">
+            <div class = "card-body">
+                <h5 class="card-title">{{event.name}}</h5>
+                <p class="card-text">{{event.description}}</p>
+                <a routerLink="['/specialEvents']" class="btn btn-primary">Buy Tickets</a>
+            </div>
+
+            <div class="card-footer text-muted">
+                {{event.date | date:'shortDate'}}
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="row mt-5">
+  <div class= "col-md-4 mb-3">
+      <div class="card text-center">
+          <div class = "card-body">
+              <h5 class="card-title">Air India </h5>
+              
+
+              <p class="card-text">Mumbai-Delhi</p>
+              <a routerLink="/special-events" class="btn btn-primary">Buy Tickets</a>
+          </div>
+
+          <div class="card-footer text-muted">
+             
+          </div>
+      </div>
+
+  </div>
+</div>
+<div class="row mt-5">
+    <div class= "col-md-4 mb-3">
+        <div class="card text-center">
+            <div class = "card-body">
+                <h5 class="card-title">Indigo</h5>
+                <p class="card-text">Bengaluru - Chennai</p>
+                <a routerLink="/special-events" class="btn btn-primary">Buy Tickets</a>
+            </div>
+  
+            <div class="card-footer text-muted">
+               
+            </div>
+        </div>
+  
+    </div>
+  </div>
+<div class="row mt-5">
+<div class= "col-md-4 mb-3">
+    <div class="card text-center">
+        <div class = "card-body">
+            <h5 class="card-title">Indigo</h5>
+            <p class="card-text">Bengaluru - Chennai</p>
+            <a routerLink="/special-events" class="btn btn-primary">Buy Tickets</a>
+        </div>
+
+        <div class="card-footer text-muted">
+           
+        </div>
+    </div>
+
+</div>
+</div>
+<div class="row mt-5">
+<div class= "col-md-4 mb-3">
+    <div class="card text-center">
+        <div class = "card-body">
+            <h5 class="card-title">Air Asia</h5>
+            <p class="card-text"> Langkawi - George Town</p>
+            <a routerLink="/special-events" class="btn btn-primary">Buy Tickets</a>
+        </div>
+
+        <div class="card-footer text-muted">
+           
+        </div>
+    </div>
+
+</div>
+</div>
+<div class="row mt-5">
+<div class= "col-md-4 mb-3">
+    <div class="card text-center">
+        <div class = "card-body">
+            <h5 class="card-title">IndiGo</h5>
+            <p class="card-text">DEL New Delhi, India - BLR Bengaluru, India</p>
+            <a routerLink="/special-events" class="btn btn-primary">Buy Tickets</a>
+        </div>
+
+        <div class="card-footer text-muted">
+           
+        </div>
+    </div>
+
+</div>
+</div>
+<div class="row mt-5">
+<div class= "col-md-4 mb-3">
+    <div class="card text-center">
+        <div class = "card-body">
+            <h5 class="card-title">Emirates</h5>
+            <p class="card-text">New Delhi - London</p>
+            <a routerLink="/special-events" class="btn btn-primary">Buy Tickets</a>
+        </div>
+
+        <div class="card-footer text-muted">
+           
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+
+<div class="row mt-5">
+  <div class= "col-md-4 mb-3" *ngFor= "let event of events">
+      <div class="card text-center">
+          <div class = "card-body">
+              <h5 class="card-title">{{event.name}}</h5>
+              <p class="card-text">{{event.description}}</p>
+              <a routerLink="['/specialEvents']" class="btn btn-primary">Buy Tickets</a>
+          </div>
+
+          <div class="card-footer text-muted">
+              {{event.date | date:'shortDate'}}
+          </div>
+      </div>
+
+  </div>
+</div>
+</div>
+
+
+
+
+
+<!--<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">kavya</h5>
+        <p class="card-text">boy</p>
+        <a href="#" class="btn btn-primary">Buy ticket</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>-->

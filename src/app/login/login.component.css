@@ -1,0 +1,15 @@
+.box{
+    background: url('https://i.insider.com/5e8f70a8c023205e4245d983?width=700');
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      justify-content: center;
+      position: relative;
+}
+.row{
+
+    align-self: center;
+    margin-top: 1rem;
+    
+}
+

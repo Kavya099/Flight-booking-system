@@ -1,0 +1,171 @@
+
+
+
+  <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+    
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://media.istockphoto.com/id/486836087/photo/business-travel.jpg?s=612x612&w=0&k=20&c=B2jcARGGKEQBsc4sl9unuKd9FlkjUkl3jD6MsXYH5Ac=" class="d-block w-100" alt="...">
+      </div>
+      
+      <div class="carousel-item">
+        <img src="https://img.freepik.com/free-photo/airport-terminal_1417-1456.jpg?w=2000" class="d-block w-100" alt="...">
+      </div>
+      <div class="context">
+        <h1>Welcome to Flight Booking System</h1>
+       
+      </div>
+      
+    </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div><br><br>
+<div class="board">
+  <div class="card" style="width: 18rem;">
+    <img src="https://images.herzindagi.info/image/2022/Oct/delhi-pl.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Delhi</h5>
+      <p class="card-text">“A journey is best measured in friends, rather than miles.” </p>
+      <a  routerLink="/events" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/09/15144355/Untitled-design-2-4-1600x900.jpg?tr=w-1920" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Hyderbad</h5>
+      <p class="card-text">Why do you go away? So that you can come back. So that you can see the place you came from with new eyes and extra colors. And the people there see you differently, too. Coming back to where you started is not the same as never leaving.”
+        ― Terry Pratchett, A Hat Full of Sky</p>
+      <a routerLink="/events" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Lalbagh_Glasshouse_night_panorama.jpg/1280px-Lalbagh_Glasshouse_night_panorama.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Banglore</h5>
+      <p class="card-text">“We travel, some of us forever, to seek other places, other lives, other souls.” </p>
+      <a routerLink="/events" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Chennai_Central.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Chennai</h5>
+      <p class="card-text">“Traveling – it leaves you speechless, then turns you into a storyteller.”</p>
+      <a routerLink="/events" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+
+
+  <html>
+  <head>
+    <title> Flight Booking Form</title>
+  </head>
+  <body>
+    <form  action="" method= "post" class="trip-form">
+      <fieldset class="radio-group">
+       <label for="one-way" class="bold-type">
+         <input type="radio" id="one-way" name="trip-type" value="oneWay" />
+         One Way 
+      </label>
+      <label for="round-trip" class="bold-type">
+        <input type="radio" id="round-trip" name="trip-type" value="roundTrip" checked="checked" />
+        Round trip
+      </label>
+      <label for="multi-city" class="bold-type">
+        <input type="radio" id="multi-city" name="trip-type" value="multiCity" />
+        Multi City
+      </label>
+    </fieldset>
+      
+      <fieldset>
+        <div class="group-field">
+          <label for="from" class="bold-type">From </label>
+          <input class="from-place" type="text" name="from" maxlength="100" placeholder="Any world wide city or airport">
+        </div>
+        <div class="group-field">
+          <label for="to" class="bold-type">To </label>
+          <input class="to-place" type="text" name="to"  maxlength="100" placeholder="Any world wide city or airport">
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="group-field">
+          <label for="depart" class="bold-type">Depart on</label>
+          <input placeholder="Pick a date" type="date" name="depart" />
+        </div>
+        <div class="group-field">
+          <label for="return" class="bold-type">Return on</label>
+          <input placeholder="Pick a date" type="date" name="return" />
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <div class="group-select-field">
+          <label for="adults" class="bold-type">Adults</label> 
+          <select name="adults" class="ticket-count">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">3</option>
+            <option value="5">3</option>
+          </select>
+        </div>
+         <div class="group-select-field">
+          <label for="children">Children</label>
+           <select name="children" class="ticket-count">
+             <option value="0">0</option>
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="4">3</option>
+             <option value="5">3</option>
+           </select>
+           <label class="label-hint"> 2&hyphen;11 years</label>
+        </div>
+         <div class="group-select-field">
+          <label for="infants">Infants</label>
+           <select name="children" class="ticket-count">
+             <option value="0">0</option>
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="4">3</option>
+             <option value="5">3</option>
+           </select>
+           <label class="label-hint">Below 2 yrs</label>
+        </div>
+      </fieldset>
+      <fieldset class="more-option">
+        <details>
+          <summary class="more-link"> <b>More options: </b>Class of travel, Airline Preference</summary>
+           <div class="group-field">
+          <label for="class-of-travel">Class of travel</label>
+          <select name="class-of-travel" class="travel-class-select">
+            <option value="economy">Economy</option>
+            <option value="business">Business class</option>
+            <option value="firstClass">First class</option>
+          </select>
+        </div>
+        <div class="group-field">
+          <label for="airline-name">Preferred Airline</label> 
+          <input class="airline-name" type="text" name="airline-name" size="30" maxlength="100" placeholder="Airline name"/> 
+        </div>
+      </details> 
+      </fieldset>
+      
+      <input class="search-btn" type="submit" value="Search flights"/>
+    </form>
+  </body>
+
+
+
+</html>
+

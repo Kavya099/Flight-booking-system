@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  #menu{
+    animation-play-state: running;
+  }
+  .bi bi-menu-button{
+    background-color: antiquewhite;
+  }
+  
+  body{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto;
+  }
+  
+  .logo img{
+    max-width:100%;	
+  }
+  
+  .sidenav{
+    background-color:#333 ;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    text-align: center;
+    padding-top: 30px;
+    position: fixed;
+    transition:  all .5s ease;
+  }
+  
+  .sidenav a{
+    display: block;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 15px;
+  }
+  
+  .sidenav a:hover{
+    color: #333;
+    background-color: #fff;
+    font-weight: bold;
+    border-right: 2px solid #ffffff;
+  }
+  
+  .sidenav .fa{
+    display: inline-block;
+  }
+  
+  .single-nav {
+      border-bottom: 1px solid #fff;
+  }
+
+
+  
+  #icon{
+  display: none;
+  width: 2rem;
+  display: inline;
+   background-color: black;
+   overflow: auto;
+  }
+  
+  label #openbtn, label #closebtn{
+    position: absolute;
+    cursor: pointer;
+
+    
+  }
+  
+  label #openbtn{
+    margin-top: 4rem;
+    top: 0px;
+    font-size: 20px;
+    background-color: #4b0f0f;
+    left: 1px;
+  
+    padding: 5px;
+    color:#fff;
+    
+  }
+  
+  label #closebtn{
+  z-index: 1111;
+  top: 20px;
+  left: -212px;
+  font-size: 30px;
+  }
+  
+  #icon:checked ~ .sidenav{
+    left:0;
+  }
+  
+  #icon:checked ~ label #closebtn {
+      left: 212px;
+      color: #fff;
+  }
+  
+  #icon:checked ~ label #openbtn{
+    left:170px;
+    opacity: 0;
+  }
+  
+  #icon:checked ~ .content{
+    margin-left: 250px;
+  }
+  
+  .content {
+      background: url('https://media.istockphoto.com/id/155439315/photo/passenger-airplane-flying-above-clouds-during-sunset.jpg?b=1&s=612x612&w=0&k=20&c=E68ksW1MTzGZGHOxSYHu-y9I2Nv0iqbJCkER9e3K7TM=');
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      padding: 300px 0;
+      transition: all .5s;
+      font-size: 50px;
+      text-transform: uppercase;
+  }
+  

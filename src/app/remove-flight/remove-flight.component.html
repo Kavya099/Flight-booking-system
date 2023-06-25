@@ -1,0 +1,20 @@
+
+
+<div class="container">
+  <div class="sidebar">
+    <h3>Sidebar</h3>
+    <ul>
+      <li>Menu Item 1</li>
+      <li>Menu Item 2</li>
+      <li>Menu Item 3</li>
+    </ul>
+  </div>
+  <div class="main-content">
+    <div class="card">
+      <h2>Remove Flight</h2>
+      <form (ngSubmit)="removeFlight()">
+        <input type="text" [(ngModel)]="flightNumber" placeholder="Flight Number" required>
+        <button type="submit">Remove Flight</button>
+      </form>
+    </div>
+    
